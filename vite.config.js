@@ -27,6 +27,9 @@ export default {
     open: !("SANDBOX_URL" in process.env || "CODESANDBOX_HOST" in process.env), // Open if it's not a CodeSandbox
   },
   build: {
+    rollupOptions: {
+      input: "./src/index.jsx", // Or './src/index.js' if that's your entry point
+    },
     outDir: "../dist", // Output in the dist/ folder
     emptyOutDir: true, // Empty the folder first
     sourcemap: true, // Add sourcemap
