@@ -4,7 +4,7 @@ import { transformWithEsbuild } from "vite";
 export default {
   root: "src/",
   publicDir: "../public/",
-  base: "game-react-three-fiber",
+  base: "/game-react-three-fiber",
   plugins: [
     // React support
     react(),
