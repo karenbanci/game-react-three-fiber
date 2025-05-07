@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "deploy": "vite build && gh-pages -d game-react-three-fiber"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "4.1",
